@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Portfolio Jacek Moskwa</title>
+
+    <!--    Bootstarp -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Google fonts styles -->
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,200,300,400,500,600,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500,600" rel="stylesheet">
+
+    <!-- Font Awesome styles -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--    Devicons styles -->
+
+    <link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+
+    <!-- Main style sheet -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+    <canvas id="canvas"></canvas>
+
+    <!-- Main nav bootstrap -->
+    <nav class="fixed-top navbar navbar-expand-lg navbar-light" id="main-nav">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav w-100 justify-content-end">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">o mnie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Technologie</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#portfolio">portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">kontakt</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- Main nav - END -->
+
+    <!-- Main header -->
+    <header id="main-header">
+        <div class="header-caption">
+            <h1>Jacek <span>Moskwa</span></h1>
+            <h2>Front End Developer</h2>
+        </div>
+    </header>
+    <!-- Main header - END-->
+
+    <!-- Section About -->
+    <section id="about">
+        <div class="container">
+            <header class="section-header">
+                <h2 class="text-center">O <span>mnie</span></h2>
+            </header>
+            <div class="row">
+                <div class="col-md-6">
+                    <figure class="text-center">
+                        <img src="img/foto.jpg" alt="Jacek Moskwa">
+                        <p>Zapraszam do obejrzenia mojego CV!</p>
+                        <a class="link" href="files/Jacek_Moskwa_CV.pdf" target="_blank"><i class="fa fa-file-o" aria-hidden="true"></i></a>
+                    </figure>
+                </div>
+                <div class="text-justify col-md-6">
+                    <p>Niezwykle mi miło, że chcesz mnie trochę poznać - mam na imię Jacek i programowanie to moja największa pasja, ale zacznijmy od początku.<br>Od zawsze interesowały mnie przedmioty ścisłe, w szczególności królowa nauk matematyka. Poza tym zawsze fascynowała mnie informatyka. W liceum rozpoczęła się moja przygoda z programowaniem i tworzeniem stron www. Niestety życie ukierunkowało moją ścieżkę zawodową inaczej i przez wiele lat zajmowałem się czymś kompletnie innym. Przez długi okres czasu wahałem się z decyzją o przebranżowieniu. Dlaczego zdecydowałem się na ten krok? Lubię wyzwania.<br>Początkowo moją wiedzę czerpałem głównie z kursów internetowych oraz książek branżowych. Jednak czułem niedosyt i zdecydowałem się na intensywny kurs Front-End Developer. Wciąż uzupełniam moją wiedzę i szlifuje umiejętności programistyczne. Dążę do poszerzania swoich kompetencji poprzez poznawanie najnowszych rozwiązań i technologii programistycznych, a także doskonalenie nabytej już wiedzy. Dużą frajdę sprawia mi uczestnictwo w warsztatach branżowych. Posługuję się językiem angielskim na przyzwoitym poziomie. Dzięki czemu mogę szukać rozwiązań problemów na obcojęzycznych stronach internetowych. W przyszłości chciałbym zostać Full Stack Developerem.<br><br>Więcej na temat poznanych technologii opiszę w dziale poniżej.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section About - END -->
+
+    <!-- Section Skills -->
+    <section id="skills">
+        <div class="container text-center" id="container">
+            <header class="section-header">
+                <h2><span>Technologie</span></h2>
+                <p>W tym dziale przedstawiam technologie, które poznałem. Jestem aktualnie na etapie poszerzenia wiedzy w zakresie biblioteki React technologii JavaScript. Chciałbym również zgłębić temat języka skryptowego PHP.</p>
+            </header>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-html5-plain"></i>
+                        <p>HTML 5</p>
+                        <div class="popuptext">HTML oznacza Hypertext Markup Language - czyli hipertekstowy język znaczników.</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-css3-plain"></i>
+                        <p>CSS 3</p>
+                        <div class="popuptext">Kaskadowe arkusze stylów to język służący do opisu formy prezentacji (wyświetlania) stron WWW.</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-javascript-plain"></i>
+                        <p>JavaScript</p>
+                        <div class="popuptext">JavaScript skryptowy język programowania, stworzony przez firmę Netscape.</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-jquery-plain"></i>
+                        <p>JQuery</p>
+                        <div class="popuptext">Lekka biblioteka programistyczna ułatwiająca korzystanie z języka JavaScript.</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-react-original"></i>
+                        <p>React</p>
+                        <div class="popuptext">Biblioteka JavaScript do tworzenia interfejsów graficznych, aplikacji mobilnych i internetowych</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-sass-original"></i>
+                        <p>Sass</p>
+                        <div class="popuptext">Sass to preprocesor CSS, pozwala na znacznie szybszą i wydajniejszą pracę z arkuszami stylów.</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-nodejs-plain"></i>
+                        <p>Node JS</p>
+                        <div class="popuptext">Środowisko uruchomieniowe do tworzenia wysoce skalowalnych aplikacji internetowych JavaScript.</div>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="skills-item">
+                        <i class="devicon-bootstrap-plain"></i>
+                        <p>Bootstrap</p>
+                        <div class="popuptext">Framework CSS zawierający zestaw przydatnych narzędzi ułatwiających tworzenie interfejsu.</div>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="skills-item">
+                        <i class="devicon-wordpress-plain"></i>
+                        <p>WordPress</p>
+                        <div class="popuptext">System zarządzania treścią (CMS) przeznaczony głównie do obsługi blogów.</div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="skills-item">
+                        <i class="devicon-git-plain"></i>
+                        <p>Git</p>
+                        <div class="popuptext">Narzędzie, które służy do kontrolowanego wprowadzania zmian w projekcie.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Skills - END -->
+
+    <!-- Section Portfolio -->
+    <section id="portfolio">
+        <div class="container text-center">
+            <header class="section-header">
+                <h2>Moje <span>portfolio</span></h2>
+                <p>Poniżej przedstawiam projekty wykonane w ramch kursu i szkolenia indywidualnego. </p>
+            </header>
+            <div class="row">
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-1">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>Portfolio</h3>
+                                    <p>Projekt przygotowany podczas zajęć warsztatowych</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, RWD</p>
+                                    <a target="_blank" href="https://moskwajacek.github.io/portfolio_1-css/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/moskwajacek/portfolio_1-css"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-2">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>Portfolio Bootstrap</h3>
+                                    <p>Portfolio wykonane w trakcie warsztatow przy użyciu wiekszości poznanych technologi.</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, JavaScript, jQuery, Bootstrap Sass</p>
+                                    <a target="_blank" href="https://moskwajacek.github.io/portfolio_2_sass/"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                    <a target="_blank" href="https://github.com/moskwajacek/portfolio_2_sass"><i class="fa fa-github" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-3">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>Git Hub</h3>
+                                    <p>Link do serwisu github.com</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, JavaScript, jQuery, Sass, Bottstrap</p>
+                                    <a target="_blank" href="https://github.com/moskwajacek"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-4">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>repl.it</h3>
+                                    <p>Link do serwisu repl.it</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, JavaScript</p>
+                                    <a target="_blank" href="https://repl.it/@moskwajacek"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-5">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>React BitBay App</h3>
+                                    <p>Link do aplikacji w serwisie github.com</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, React, JavaScript</p>
+                                    <a target="_blank" href="https://github.com/moskwajacek/BitBay_React"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+                <div class="col-lg-6">
+                    <figure class="portfolio-item" id="portfolio-item-6">
+                        <div class="portfolio-item-mask">
+                            <div class="portfolio-item-border">
+                                <div class="portfolio-item-content">
+                                    <h3>React ToDo Mobile App</h3>
+                                    <p>Link do aplikacji w serwisie github.com</p>
+                                    <h4>Technologie</h4>
+                                    <p>HTML5, CSS3, React, JavaScript, EXPO XDE</p>
+                                    <a target="_blank" href="https://github.com/moskwajacek/ToDo_Mobile_React"><i class="fa fa-home" aria-hidden="true"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </figure>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Section Portfolio - END -->
+
+    <!-- Footer Contact -->
+    <footer id="contact">
+        <div class="map-container">
+            <iframe src="https://snazzymaps.com/embed/37098" style="border:none;"></iframe>
+        </div>
+        <div class="container">
+            <h2>Jacek <span>Moskwa</span></h2>
+            <div class="row">
+                <div class="col-lg-6">
+                    <address>
+                        ul. Mieszczańska 13/12<br> 
+                        30-313 Kraków<br><br>
+                        tel: 518 118 318<br>
+                        e-mail:<a href="mailto:moskwajacek@gmail.com"> moskwajacek@gmail.com</a>
+                    </address>
+                    <div class="social-icons">
+                        <a target="_blank" href="https://www.facebook.com/jacek.moskwa" class="social-icon"><i class="fa fa-facebook"></i></a>
+                        <a target="_blank" href="https://www.linkedin.com/in/jacekmoskwa/" class="social-icon"><i class="fa fa-linkedin"></i></a>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <form target="_blank" action="https://formspree.io/moskwajacek@gmail.com" method="post">
+                        <input class="form-control" type="text" name="name" placeholder="Imię i Nazwisko">
+                        <input class="form-control" type="email" placeholder="Adres e-mail">
+                        <textarea class="form-control" name="message" placeholder="Wiadomość"></textarea>
+                        <input class="btn" type="submit" name="submit" value="Wyślij">
+                    </form>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Contact - END -->
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <p>Copyright &#169; JM </p>
+        </div>
+    </div>
+    <!-- Copyright - End -->
+
+    <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+
+    <script src="js/map_click.js"></script>
+    <script src="js/pop_up.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/main_anim.js"></script>
+
+</body>
+
+</html>

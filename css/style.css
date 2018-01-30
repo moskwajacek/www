@@ -331,6 +331,7 @@ footer {
     color: #fff;
     overflow: hidden;
     width: 100%;
+    margin: 0;
 }
 
 #contact .map-container {
@@ -426,9 +427,9 @@ footer {
 /* Copyright */
 
 .copyright {
+    position: relative;
     width: 100%;
     height: 5vh;
-    bottom: 0;
     background-color: #142634;
     color: #fff;
 }

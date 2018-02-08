@@ -1,14 +1,16 @@
 $(document).ready(function () {
     scrolled();
+    smoothScroll();
 });
 
 $(window).scroll(function () {
     scrolled();
 });
 
+
 function scrolled() {
-    var navHeight = $('#main-nav').outerHeight();
-    var scrolled = $(window).scrollTop();
+    const navHeight = $('#main-nav').outerHeight();
+    const scrolled = $(window).scrollTop();
 
     if (scrolled > navHeight) {
         $('#main-nav').addClass('scrolled');
@@ -17,40 +19,39 @@ function scrolled() {
     }
 }
 $("#navbarNav li a").click(function (event) {
-    var toggle = $(".navbar-toggler").is(":visible");
+    const toggle = $(".navbar-toggler").is(":visible");
     if (toggle) {
         $(".navbar-collapse").collapse('hide');
     }
 });
 
-
-$(document).ready(function () {
-    smoothScroll();
-});
-
 function smoothScroll() {
-    $('a[href*="#"]:not([href="#"])').click(function () {
+    $('a[href*="#"]:not([href="#carouselExampleIndicators"])').click(function () {
         if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length ? $target : $('[name=' + this.hash.slice(1) + ']');
+            let target = $(this.hash);
+            target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+            if (target.length) {
+                $('html,body').animate({
+                    scrollTop: target.offset().top
+                }, 700, function () {
 
-            if ($target.length) {
-                var baseMinScrollTime = 800,
-                    baseMaxScrollTime = 800;
+                });
 
-                var docHeight = $(document).height(),
-                    triggerTop = $(this).offset().top,
-                    targetTop = $target.offset().top;
-
-                var scrollProportion = (targetTop - triggerTop) / docHeight,
-                    relativeTime = ((baseMaxScrollTime - baseMinScrollTime) * scrollProportion) + baseMinScrollTime,
-                    // Create inverse relationship (quicker the further we scroll)
-                    scrollTime = -1 * (1 - relativeTime);
-
-                $('html, body').animate({
-                    scrollTop: targetTop - 10
-                }, scrollTime);
+                //Closes responsive menu when a scroll trigger link is clicked
+                const toggle = $(".navbar-toggler").is(":visible");
+                if (toggle) {
+                    $(".navbar-collapse").collapse('hide');
+                }
+                return false;
             }
         }
+    });
+}
+
+function hover() {
+    $('*').on('touchstart', function () {
+        $(this).trigger('hover');
+    }).on('touchend', function () {
+        $(this).trigger('hover');
     });
 }
